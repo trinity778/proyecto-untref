@@ -1,11 +1,55 @@
 /*=== Aplicando CSS Global===*/
 
+#bannerPrincipal {
+    
+}
+
+
+
+#redes ion-icon {
+ position: relative;
+ top: 10px;   
+}
+
+
+#redes a {
+    color: #eff5f5;  
+   }
+#contacto a {
+    color: #eff5f5;  
+   }
+   #redes a:hover {
+    color:#FC7300; 
+   }
+#contacto a:hover {
+    color:#FC7300; 
+   }
+
+#contacto ion-icon {
+    position: relative;
+    top: 10px;   
+   }
+
+.textoBanner {
+    position: relative;
+    color: white;
+    top: -150px;
+    text-align: center;
+    font-size: 2rem;
+    height: 0px;
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Poppins', sans-serif;
     
+}
+
+p {
+    width: 100%;
+    margin-bottom: 0px;
 }
 
 body {
@@ -26,114 +70,422 @@ ul {
     list-style: none;
 }
 
+#quienesSomos h1 {
+    color: #FC7300;  
+}
+
+#piePagina {
+    background-color: #00425A;
+    color: white;
+    width: 100%;
+    align: center;
+    padding-bottom: 30px;
+}
+
+#redes ul li {
+    padding: 10px;
+    
+}
+
+#redes h1 {
+    color: #FC7300;  
+}
+#contacto ul li {
+    padding: 10px;
+    padding-left: 40px;
+}
+
+
+
+
 /*=== Aplicando CSS al encabezado===*/
 #logo {
     width: 50%;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
 }
-
+/*
 #menu {
-    text-align: center;
+    background-color: rgba(252, 115, 0, 0.90);
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    height: 5rem;
+}*/
+
+
+
+.navbar-brand {
+    color: #EFF5F5;
+    margin: 5px;
 }
 
-#menuDerecho a{
-    color: #181823;
-
+.nav-link {
+    color: black;
 }
 
-.textoQuienesSomos {
-    padding: 20px;
+.nav-link:hover{
+    color:white;
 }
+
+.active {
+    color:white;
+}
+
+.navbar-color {
+    background-color: #FC7300;
+    
+}
+
+.navbar-nav {
+    
+}
+
+
+
 
 #propuestaEducativa {
-    background-color: #00425A ;
+    background-color: ;
     width: 100%;
 }
 
+#porQueElegirnos {
+    background-color: #00425A ;
+    color: #EFF5F5;
+    padding-bottom: 30px;
+    padding-top: 10px;
+
+}
+
+#ultimasNoticias {
+    background-color: lightgray;
+    width: 100%;
+
+}
+
+#ultimasNoticias article {
+    padding-left: 15px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+}
+
+
 /*=== Aplicando CSS Responsive===*/
-/* Medium devices (tablets, 768px and up)*/
-@media (min-width: 768px) {
-    #encabezado {
-        display: grid;
-        grid-template-columns: 1fr 2fr;
-        align-items: center;
-        
-        
-    }
+/* Medium devices (tablets, minino 400px) */
 
-    #opcionesDerecho {
-        display: flex;
-        padding: 20px;
-        flex-direction: row-reverse;
-        
-        margin: 0px;
-    }
+@media (max-width: 400px) {
 
-    #opcionesDerecho a {
-        display: flex;
-        margin: 0px;
-        padding: 20px;
-  }
-
-    #content {
-        display: grid;
-        margin-top: 30px;
-        
-    }
-
-    #textoBanner {
-        position: absolute;
+    .textoBanner {
+        position: relative;
         color: white;
-        top: 400px;
+        top: -120px;
         text-align: center;
-        width: 100%;
-
-
+        font-size: 1.5rem;
+        height: 0px;
     }
 
-    #bannerPrincipal {
-        width: 100%;
-     
+    .subtitulos {
+        color: #FC7300;
+        font-size: 1.5rem;
+        padding-top: 25px; 
+    }
+
+    .navbar-nav {
+        background-color:#FC7300;
+        z-index: 1; 
+    }
+
+    .item1 {
+        
+    }
+    .item2 {
         
     }
 
+    .imgSeccion {
+        clip-path: circle(100px at 50% 50%);
+        width: 100%;
+        
+        
+    }
     
+    
+}
 
-    .imgSecciones1 {
-        width: 30%;
-       
+@media (max-width: 768px) {
+
+    .textoBanner {
+        position: relative;
+        color: white;
+        top: -120px;
+        text-align: center;
+        font-size: 1.5rem;
+        height: 0px;
     }
 
-    #propuestaEducativa {
+    .subtitulos {
+        color: #FC7300;
+        font-size: 1.5rem;
+        padding-top: 25px; 
+    }
+
+    .navbar-nav {
+        background-color:#FC7300;
+        z-index: 1; 
+    }
+
+    .item1 {
+        
+    }
+    .item2 {
+        
+    }
+
+    .imgSeccion {
+        clip-path: circle(100px at 50% 50%);
+        width: 100%;
+        
+        
+    }
+
+    /*
+    #contentPropuesta {
         display: grid;
         grid-template-columns: repeat(4,1fr);
         
+
     }
 
     #propuestaEducativa h3 {
         text-align: center;
-        height: 200px;
+        height: 130px;
 
     }
 
     .imgSeccion {
-        clip-path: circle(80px at 50% 50%);
+        clip-path: circle(60px at 50% 50%);
     }
   
     .item1 {
         display: grid;
         grid-template-columns: 1fr 3fr;
         padding-top: 50px;
+        padding-bottom: 100px;
     }
     .item2 {
         display: grid;
         grid-template-columns: 3fr 1fr;
-        padding: 50px;
+        padding: 10px;
     }
 
-    #quienesSomos {
-        padding-top: 40px;
+    .texto1 {
+        margin-left: 50px;
     }
+    .texto2 {
+        padding-right: 50px;
+    }
+
+    .subtitulos {
+        color: #FC7300;
+        font-size: 2.2rem;
+        padding-top: 15px;
+        
+    }
+    */
+    
+    
+}
+
+
+/*=== Aplicando CSS Responsive===*/
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 769px) {
+    /*#encabezado {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        
+        
+    }*/
+
+
+    /*#opcionesDerecho {
+        display: flex;
+        padding: 20px;
+        flex-direction: row-reverse;
+        
+        margin: 0px;
+    }
+  #opcionesDerecho a {
+        display: flex;
+        margin: 0px;
+        padding: 20px;
+  }}*/
+
+  .textoBanner {
+    position: relative;
+    color: white;
+    top: -330px;
+    text-align: center;
+    font-size: 3rem;
+    height: 0px;
+}
+
+    #content {
+        display: grid;
+        margin-top: 0px;
+        
+    }
+
+
+    
+    .imgSecciones1 {
+        width: 30%;
+       
+    }
+
+    #propuestaEducativa {
+
+        
+    }
+
+    
+
+    #contentPropuesta {
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        
+
+    }
+
+    #propuestaEducativa h3 {
+        text-align: center;
+        height: 130px;
+
+    }
+
+    .imgSeccion {
+        clip-path: circle(60px at 50% 50%);
+    }
+  
+    .item1 {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding-top: 50px;
+        padding-bottom: 100px;
+    }
+    .item2 {
+        display: grid;
+        grid-template-columns: 3fr 1fr;
+        padding: 10px;
+    }
+
+    .texto1 {
+        margin-left: 50px;
+    }
+    .texto2 {
+        padding-right: 50px;
+    }
+
+    .subtitulos {
+        color: #FC7300;
+        font-size: 2.2rem;
+        padding-top: 30px;
+        
+    }
+
+    #ultimasNoticias article{
+        width: 40vw;
+        
+        
+    }
+
+    .noticias {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-bottom: 80px;
+        padding-top: 20px;
+        
+    }
+
+
+    #mapa {
+        padding-top: 25px;
+        display: block;
+        width: 30vw;
+        padding: 0px;
+
+    }
+
+    #piePagina h2 {
+        padding-top: 15px;
+        font-size: 1.5rem;
+    }
+
+    #redes h2 {
+        margin-left: 45px;
+        font-size: 1.5rem;
+    }
+
+    #contacto h2 {
+        margin-left: 45px;
+        font-size: 1.5rem;
+    }
+
+    #mapa iframe {
+        display: block;
+        width: 30vw;
+        width: 70%;
+        height: 65%;
+        padding-top: 10px;
+    }
+
+    #mapa {
+        padding-top: 25px;
+        padding-left: 60px;
+    }
+
+    #redes {
+        padding-left: 40px;
+        padding-top: 25px;
+        display: block;
+        width: 30vw;
+    }
+    #redes ul li {
+        padding: 10px;
+    }
+    #contacto ul li {
+        padding: 10px;
+        padding-left: 40px;
+
+    }
+    #contacto {
+        padding-top: 25px;
+        width: 30vw;
+        
+    }
+
+    #form {
+        display: grid;
+        justify-content: center;
+        padding-bottom: 50px;
+    }
+    
+    .itemform  {
+        grid-template-columns: repeat(2, 1fr);
+        width: 25vw;
+    }
+    
+    .itemform2  {
+        width: 48.5vw;
+    }
+    
+    .itemform3  {
+        width: 28vw;
+    }
+    
+    
+    
 
 }

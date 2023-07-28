@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Integrador - contacto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Belanosima&family=Poppins:wght@200;300;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/master.css">
+</head>
+
+<body>
+    <header id="encabezado">
+        <!--
+          <figure id="logo">
+            <img src="img/untref.png" alt="">
+          </figure>
+          -->
+        <div id="menu">
+            <nav class="navbar navbar-expand-lg" style="background-color: #FC7300;">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="/index.html">UNTREF School</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Quienes somos</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">¿Por qu&eacute; elegirnos?</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">Propuesta educativa</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/index.html">&Uacute;ltimas noticias</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link" style="color: white;" href="/contacto.html">Cont&aacute;ctenos</a>
+                            </li>
+
+                        </ul>
+                        <!--
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>-->
+                    </div>
+                </div>
+            </nav>
+            <!-- 
+            <nav id="menuDerecho">
+                <ul id="opcionesDerecho">
+                    <li><a href="">Contáctenos</a></li>
+                    <li><a href="">&Uacute;ltimas noticias</a></li>
+                    <li><a href="">Propuesta educativa</a></li>
+                    <li><a href="">¿Por qu&eacute; elegirnos?</a></li>
+                    <li><a href="#quienesSomos">Quienes somos</a></li>
+                    
+                </ul>
+            </nav>
+            -->
+        </div>
+    </header>
+    <form class="container" id="form">
+        <h1 class="subtitulos">Contactanos</h1>
+        <div class="row">
+            <div class="mb-3 itemform col-lg-2">
+                <label for="nombre" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="nombre" placeholder="" name="nombre" required>
+            </div>
+            <div class="mb-3 itemform col-lg-2">
+                <label for="apellido" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="apellido" placeholder="" name="apellido" required>
+            </div>
+        </div>
+        <div class="mb-3 itemform2">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="" name="email" required>
+        </div>
+        <div class="mb-3 itemform2">
+            <label for="mensaje" class="form-label">Comentarios</label>
+            <textarea class="form-control" id="mensaje" rows="3" name="mensaje" required></textarea>
+        </div>
+        <div class="row">
+            <div class="col-lg-2 itemform3">
+                <button type="reset" value="limpiar"
+                    style="background-image: linear-gradient(to right, #c9d2dc, #b7c3d0); border: #FC7300; margin-top: 20px; width: 20vw; box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);"
+                    type="button" class="btn btn-primary btn-lg">Limpiar</button>
+            </div>
+            <div class="col-lg-2 itemform3">
+                <input type="submit" id="button" value="Enviar" style="background-image: linear-gradient(to right, #f0b748, #FC7300); border: #FC7300; margin-top: 20px; width: 20vw; box-shadow: 0 4px 12px 0 rgba(152, 160, 180, 10);" class="btn btn-primary btn-lg">
+                </div>
+        </div>
+    </form>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+    <script type="text/javascript">
+        emailjs.init('IZeNPlQuYg7PNw5qk')
+    </script>
+
+
+    <footer id="piePagina">
+        <div class="container row ">
+            <div id="redes" class="col-lg-3">
+                <h2>Seguinos</h2>
+                <ul>
+                    <li><a href="https://www.instagram.com" target="_blank"><ion-icon size="large"
+                            name="logo-instagram"></ion-icon> @untrefschool</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><ion-icon size="large"
+                            name="logo-facebook"></ion-icon> @untrefschool</a></li>
+                    <li><a href="https://www.Linkedin.com" target="_blank"><ion-icon size="large"
+                            name="logo-linkedin"></ion-icon> @untrefschool</a></li>
+                </ul>
+            </div>
+            <div id="mapa" class="col-lg-3">
+                <h2>Aquí nos encontramos</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.8752992957798!2d-58.37892988953356!3d-34.60731467284029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb3b098d0fdb%3A0xc5173d52ffc132de!2sUNTREF%20Posgrado!5e0!3m2!1ses-419!2sar!4v1689683595668!5m2!1ses-419!2sar"
+                    width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div id="contacto" class="col-lg-3" style="color: white;">
+                <h2>Contactanos</h2>
+                <ul>
+                    <li><a href="mailto: mariamingrone@gmail.com" target="_blank"><ion-icon size="large"
+                            name="mail-open-outline"></ion-icon> contacto@untrefschool.com.ar</a></li>
+                    <li><a href="https://www.facebook.com" target="_blank"><ion-icon size="large"
+                            name="call-outline"></ion-icon> 11-222-3333</a></li>
+                    <li><a href="https://www.Linkedin.com" target="_blank"><ion-icon size="large"
+                            name="logo-whatsapp"></ion-icon> 11-222-3344</a></li>
+                            
+                </ul>
+            </div>
+        </div>
+    </footer>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <script>const btn = document.getElementById('button');
+
+        document.getElementById('form')
+         .addEventListener('submit', function(event) {
+           event.preventDefault();
+        
+           btn.value = 'Enviando...';
+        
+           const serviceID = 'default_service';
+           const templateID = 'template_ir0rqz3';
+        
+           emailjs.sendForm(serviceID, templateID, this)
+            .then(() => {
+              btn.value = 'Enviar';
+              alert('Mensaje enviado correctamente');
+            }, (err) => {
+              btn.value = 'Enviar';
+              alert(JSON.stringify(err));
+            });
+        });
+
+
+    </script>
+
+</body>
+
+</html>
